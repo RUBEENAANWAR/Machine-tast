@@ -1,0 +1,203 @@
+.patient-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.patient-detail__back {
+  align-self: flex-start;
+  color: var(--text-secondary);
+}
+
+.patient-detail__hero {
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 40px;
+}
+
+.patient-detail__hero-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.patient-detail__name-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.patient-detail__name {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.patient-detail__sub {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.patient-detail__condition {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-light);
+  margin-bottom: 16px;
+}
+
+.patient-detail__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.patient-detail__contacts span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.patient-detail__hero-right {
+  border-left: 1px solid var(--border);
+  padding-left: 40px;
+}
+
+.patient-detail__meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.patient-detail__meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--text-muted);
+}
+
+.patient-detail__meta-label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.patient-detail__meta-value {
+  display: block;
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Vital Cards */
+.vital-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.vital-card__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.vital-card__value {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.vital-card__unit {
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.vital-card__label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.vital-card__normal {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* Section */
+.patient-detail__section {
+  padding: 24px;
+}
+
+.patient-detail__section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.patient-detail__section-header .section-title { margin-bottom: 0; }
+
+.patient-detail__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.patient-detail__list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.patient-detail__list-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-light);
+  flex-shrink: 0;
+}
+
+.patient-detail__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.patient-detail__not-found {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .patient-detail__hero { grid-template-columns: 1fr; }
+  .patient-detail__hero-right { border-left: none; padding-left: 0; border-top: 1px solid var(--border); padding-top: 32px; }
+}
+
+@media (max-width: 640px) {
+  .patient-detail__hero-left { flex-direction: column; align-items: center; text-align: center; }
+  .patient-detail__name-row { justify-content: center; }
+  .patient-detail__contacts { justify-content: center; }
+}

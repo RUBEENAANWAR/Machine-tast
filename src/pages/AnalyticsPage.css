@@ -1,0 +1,35 @@
+.analytics { display: flex; flex-direction: column; gap: 24px; }
+
+.analytics__actions { display: flex; gap: 12px; }
+
+.analytics__overview {}
+
+.analytics__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.analytics__chart {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.analytics__chart-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.recharts-legend-item-text {
+  color: var(--text-secondary) !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+}
+
+@media (max-width: 900px) {
+  .analytics__grid { grid-template-columns: 1fr; }
+}
