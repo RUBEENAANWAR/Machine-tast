@@ -27,7 +27,7 @@ export default function NotificationToast() {
 
   if (!active || !visible) return null;
 
-  const { icon: Icon, color } = ICON_MAP[active.type];
+  const { icon: Icon, color } = ICON_MAP[active.type as keyof typeof ICON_MAP];
 
   return (
     <div 
